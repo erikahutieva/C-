@@ -1,7 +1,4 @@
 #include <iostream>
-#include <cmath>
-
-// Define M_PI if not already defined
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
@@ -33,15 +30,15 @@ double calculateY(double x, double R) {
 int main() {
     double x, R;
 
-    cout << "Enter the value of R: ";
+    cout << "R: ";
     cin >> R;
 
-    cout << "Enter the value of x: ";
+    cout << "x: ";
     cin >> x;
 
     double y = calculateY(x, R);
 
-    cout << "The value of y for x = " << x << " is " << y << endl;
+    cout << x << y << endl;
 
     return 0;
 }
